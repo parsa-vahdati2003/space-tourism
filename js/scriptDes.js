@@ -1,0 +1,409 @@
+// import axios from "axios";
+
+// console.log("hi");
+
+// // ========================================
+// // SELECTING ELEMENTS
+// // ========================================
+
+// const moonEl = document.querySelector("#moonEl");
+// const marsEl = document.querySelector("#marsEl");
+// const europaEl = document.querySelector("#europaEl");
+// const titanEl = document.querySelector("#titanEl");
+
+// const desHero = document.querySelector("#des-hero");
+// const desImg = document.querySelector("#destination-image");
+// const desContent = document.querySelector("#destination-content");
+
+// // get api data
+
+// let all = []; // [Moon, Mars, Europa, Titan]
+
+// async function getDestinations() {
+//   try {
+//     const res = await axios.get("http://localhost:3000/destinations");
+
+//     all = res.data;
+
+//     console.log(all);
+//     console.log(all[0].images.webp);
+//     moonEl.addEventListener("click", () => {
+//       desContent.innerHTML = destinationTemplate(all[0]);
+//     });
+//     marsEl.addEventListener("click", () => {
+//       desContent.innerHTML = destinationTemplate(all[1]);
+//     });
+//     europaEl.addEventListener("click", () => {
+//       desContent.innerHTML = destinationTemplate(all[2]);
+//     });
+//     titanEl.addEventListener("click", () => {
+//       desContent.innerHTML = destinationTemplate(all[3]);
+//     });
+//   } catch (error) {
+//     console.error("Failed to fetch:", error.message);
+//   }
+// }
+
+// getDestinations();
+
+// // function moontemplate(moon) {
+// //   return `
+// //     <div id="destination-image">
+// //       <img
+// //         src="${moon.images.webp.replace("./", "/")}"
+// //         alt="${moon.name}"
+// //       >
+// //     </div>
+
+// //     <div>
+
+// //       <nav class="flex items-start gap-8 pb-3">
+
+// //         <button
+// //           id="moonEl"
+// //           type="button"
+// //           class="tracking-[2px] pb-3 text-base text-white active-link"
+// //         >
+// //           MOON
+// //         </button>
+
+// //         <button
+// //           id="marsEl"
+// //           type="button"
+// //           class="tracking-[2px] pb-3 text-base text-white/50 hover:text-white"
+// //         >
+// //           MARS
+// //         </button>
+
+// //         <button
+// //           id="europaEl"
+// //           type="button"
+// //           class="tracking-[2px] pb-3 text-base text-white/50 hover:text-white"
+// //         >
+// //           EUROPA
+// //         </button>
+
+// //         <button
+// //           id="titanEl"
+// //           type="button"
+// //           class="tracking-[2px] pb-3 text-base text-white/50 hover:text-white"
+// //         >
+// //           TITAN
+// //         </button>
+
+// //       </nav>
+
+// //       <h2 class="mt-10 font-Bellefair text-8xl text-white mb-4">
+// //         ${moon.name}
+// //       </h2>
+
+// //       <p class="font-barlow text-lg leading-[180%] w-95 text-justify text-blue-300 mb-10">
+// //         ${moon.description}
+// //       </p>
+
+// //       <div
+// //         class="w-full h-px bg-[#383b4b] mb-10"
+// //         aria-label="under line"
+// //       ></div>
+
+// //       <div class="flex items-center gap-6">
+
+// //         <div class="flex flex-col gap-3">
+// //           <span class="text-blue-300 text-sm tracking-[2px]">
+// //             AVG. DISTANCE
+// //           </span>
+
+// //           <span class="font-Bellefair text-2xl text-white">
+// //             ${moon.distance}
+// //           </span>
+// //         </div>
+
+// //         <div class="flex flex-col gap-3">
+// //           <span class="text-blue-300 text-sm tracking-[2px]">
+// //             Est. travel time
+// //           </span>
+
+// //           <span class="font-Bellefair text-2xl text-white">
+// //             ${moon.travel}
+// //           </span>
+// //         </div>
+
+// //       </div>
+
+// //     </div>
+// //   `;
+// // }
+
+// function destinationTemplate(destination) {
+//   return `
+//     <div id="destination-image">
+//       <img
+//         src="${destination.images.webp.replace("./", "/")}"
+//         alt="${destination.name}"
+//       >
+//     </div>
+
+//     <div>
+
+//       <nav class="flex items-start gap-8 pb-3">
+
+//         <button
+//           id="moonEl"
+//           type="button"
+//           class="tracking-[2px] pb-3 text-base ${
+//             destination.name === "Moon"
+//               ? "text-white active-link"
+//               : "text-white/50"
+//           }"
+//         >
+//           MOON
+//         </button>
+
+//         <button
+//           id="marsEl"
+//           type="button"
+//           class="tracking-[2px] pb-3 text-base ${
+//             destination.name === "Mars"
+//               ? "text-white active-link"
+//               : "text-white/50"
+//           }"
+//         >
+//           MARS
+//         </button>
+
+//         <button
+//           id="europaEl"
+//           type="button"
+//           class="tracking-[2px] pb-3 text-base ${
+//             destination.name === "Europa"
+//               ? "text-white active-link"
+//               : "text-white/50"
+//           }"
+//         >
+//           EUROPA
+//         </button>
+
+//         <button
+//           id="titanEl"
+//           type="button"
+//           class="tracking-[2px] pb-3 text-base ${
+//             destination.name === "Titan"
+//               ? "text-white active-link"
+//               : "text-white/50"
+//           }"
+//         >
+//           TITAN
+//         </button>
+
+//       </nav>
+
+//       <h2 class="mt-10 font-Bellefair text-8xl text-white mb-4">
+//         ${destination.name}
+//       </h2>
+
+//       <p class="font-barlow text-lg leading-[180%] w-95 text-justify text-blue-300 mb-10">
+//         ${destination.description}
+//       </p>
+
+//       <div class="w-full h-px bg-[#383b4b] mb-10"></div>
+
+//       <div class="flex items-center gap-6">
+
+//         <div class="flex flex-col gap-3">
+//           <span class="text-blue-300 text-sm tracking-[2px]">
+//             AVG. DISTANCE
+//           </span>
+
+//           <span class="font-Bellefair text-2xl text-white">
+//             ${destination.distance}
+//           </span>
+//         </div>
+
+//         <div class="flex flex-col gap-3">
+//           <span class="text-blue-300 text-sm tracking-[2px]">
+//             Est. travel time
+//           </span>
+
+//           <span class="font-Bellefair text-2xl text-white">
+//             ${destination.travel}
+//           </span>
+//         </div>
+
+//       </div>
+
+//     </div>
+//   `;
+// }
+// // destination = all[0];
+
+import axios from "axios";
+
+console.log("hi");
+
+// ========================================
+// SELECTING ELEMENTS
+// ========================================
+
+// des-con
+const desContent = document.querySelector("#destination-content");
+
+let all = []; // [Moon, Mars, Europa, Titan]
+
+// ========================================
+// GET API DATA
+// ========================================
+
+async function getDestinations() {
+  try {
+    const res = await axios.get("http://localhost:3000/destinations");
+
+    all = res.data;
+
+    console.log(all);
+
+    // Show Moon by default
+    showDestination(all[0]);
+  } catch (error) {
+    console.error("Failed to fetch:", error.message);
+  }
+}
+
+// ========================================
+// SHOW DESTINATION
+// ========================================
+
+function showDestination(destination) {
+  desContent.innerHTML = destinationTemplate(destination);
+}
+
+// ========================================
+// DESTINATION TEMPLATE
+// ========================================
+
+function destinationTemplate(destination) {
+  return `
+    <div id="destination-image">
+      <img class="size-50 md:size-75 lg:size-120"
+        src="${destination.images.webp.replace("./", "/")}"
+        alt="${destination.name}"
+      >
+    </div>
+
+    <div class="flex flex-col items-center " >
+
+      <nav class="flex items-start gap-8 pb-3">
+
+        <button
+          data-name="Moon"
+          type="button"
+          class="tracking-[2px] pb-3 text-base uppercase ${
+            destination.name === "Moon"
+              ? "text-white active-link"
+              : "text-white/50"
+          }"
+        >
+          MOON
+        </button>
+
+        <button
+          data-name="Mars"
+          type="button"
+          class="tracking-[2px] pb-3 text-base ${
+            destination.name === "Mars"
+              ? "text-white active-link"
+              : "text-white/50"
+          }"
+        >
+          MARS
+        </button>
+
+        <button
+          data-name="Europa"
+          type="button"
+          class="tracking-[2px] pb-3 text-base ${
+            destination.name === "Europa"
+              ? "text-white active-link"
+              : "text-white/50"
+          }"
+        >
+          EUROPA
+        </button>
+
+        <button
+          data-name="Titan"
+          type="button"
+          class="tracking-[2px] pb-3 text-base ${
+            destination.name === "Titan"
+              ? "text-white active-link"
+              : "text-white/50"
+          }"
+        >
+          TITAN
+        </button>
+
+      </nav>
+
+      <h2 class="mt-10 font-Bellefair text-6xl md:text-[80px] lg:text-8xl text-white mb-4 uppercase">
+        ${destination.name}
+      </h2>
+
+      <p class="font-barlow text-lg leading-[180%] w-78 md:w-lg lg:w-95 text-center lg:text-justify text-blue-300 mb-10">
+        ${destination.description}
+      </p>
+
+      <div
+        class="w-full h-px bg-[#383b4b] mb-10"
+        aria-label="under line"
+      ></div>
+
+      <div class="flex  items-center gap-6">
+
+        <div class="flex flex-col gap-3">
+          <span class="text-blue-300 text-sm tracking-[2px]">
+            AVG. DISTANCE
+          </span>
+
+          <span class="font-Bellefair text-2xl text-white">
+            ${destination.distance}
+          </span>
+        </div>
+
+        <div class="flex flex-col gap-3">
+          <span class="text-blue-300 text-sm tracking-[2px]">
+            Est. travel time
+          </span>
+
+          <span class="font-Bellefair text-2xl text-white">
+            ${destination.travel}
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+  `;
+}
+
+// ========================================
+// NAV CLICK
+// ========================================
+
+desContent.addEventListener("click", (event) => {
+  const button = event.target.closest("button");
+
+  if (!button) return;
+
+  const name = button.dataset.name;
+
+  const destination = all.find((item) => {
+    return item.name === name;
+  });
+
+  showDestination(destination);
+});
+
+// ========================================
+// START
+// ========================================
+
+getDestinations();

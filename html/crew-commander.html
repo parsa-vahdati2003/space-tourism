@@ -1,0 +1,97 @@
+<!doctype html>
+<body lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+   <script type="module" src="../js/scriptCrew.js"></script>
+      <script type="module" src="../js/home.js"></script>
+    <title>Crew | Space tourism website</title>
+  </head>
+  <body class="min-h-dvh font-barlow bg-[url('../assets/crew/background-crew-desktop.jpg')]
+    md:bg-[url('../assets/crew/background-crew-tablet.jpg')]
+    lg:bg-[url('../assets/crew/background-crew-mobile.jpg')]
+    bg-cover
+    bg-center
+    bg-no-repeat">
+
+<nav class="relative flex justify-between font-barlow p-12.5 md:p-0">
+
+ 
+
+  <div id="nav-left" class="md:py-8 md:px-10">
+    <img src="../assets/shared/logo.svg" class="size-12  md:size-15" alt="logo" />
+  </div>
+
+
+  <button  type="button" class="md:hidden">
+    <img id="openBtn"  class="size-8 md:hidden " src="../assets/logo/menu.svg" alt="open menu icon">
+    <img id="closeBtn" class="hidden size-8 absolute z-999 right-4.5 top-5.75" src="../assets/logo/Close.svg" alt="Close menu icon">
+  </button>
+
+  <div id="nav-right"
+       class=" fixed right-0 top-0 bottom-0 z-999   h-screen md:relative  md:h-auto hidden md:flex  py-4 px-6  md:flex-row items-stretch gap-12 md:gap-10   md:px-20  lg:px-31 lg:mt-10 bg-white/5 backdrop-blur-sm">
+
+   
+    <a href="../index.html"
+       class="nav-link flex items-center gap-2 h-full border-b-[3px] border-transparent   text-blue-300  hover:border-white/50  ">
+      <span class="font-bold">00</span>
+      <span class="tracking-[2px]">HOME</span>
+    </a>
+
+    <a href="destination-moon.html"
+       class="nav-link flex items-center gap-2    h-full hover:active-link-hover border-b-[3px] border-transparent  text-blue-300 hover:border-white/50   transition-all">
+      <span class="font-bold">01</span>
+      <span class="tracking-[2px]">DESTINATION</span>
+    </a>
+
+    <a href="#"
+       class="nav-link flex items-center gap-2 h-full  active-link  border-b-[3px] border-transparent  text-white  transition-all">
+      <span class="font-bold">02</span>
+      <span class="tracking-[2px]">CREW</span>
+    </a>
+
+    <a href="technology-spaceport.html"
+       class="nav-link flex items-center gap-2  h-full hover:active-link-hover border-b-[3px] border-transparent  text-blue-300 hover:border-white/50 transition-all">
+      <span class="font-bold">03</span>
+      <span class="tracking-[2px]">TECHNOLOGY</span>
+    </a>
+  </div>
+</nav>
+
+      <main  class="md:items-center md:flex md:flex-col lg:items-start lg:block">
+   
+        <div id="crew-fetch" class="lg:py-12 md:p-10 lg:px-41 p-6  ">
+         
+            </div>
+
+<div class="flex lg:justify-start justify-center gap-6 md:pb-12 md:px-41 p-6">
+  <button id="btn1" class="size-3 md:size-4 rounded-full transition-opacity bg-white"></button>
+
+  <button id="btn2" class="size-3 md:size-4 rounded-full transition-opacity bg-white/17 hover:bg-white/50"></button>
+
+  <button id="btn3" class="size-3 md:size-4 rounded-full transition-opacity bg-white/17 hover:bg-white/50"></button>
+
+  <button id="btn4" class="size-3 md:size-4 rounded-full transition-opacity bg-white/17 hover:bg-white/50"></button>
+</div>
+        
+
+
+</main>
+      
+     
+   
+</body>
+</html>
