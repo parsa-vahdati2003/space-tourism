@@ -1,4 +1,4 @@
-import{t as e}from"./axios-ByMrdxRv.js";import"./home-PJJHuPYa.js";console.log(`hi`);var t=document.querySelector(`#crew-fetch`),n=document.querySelector(`#btn1`),r=document.querySelector(`#btn2`),i=document.querySelector(`#btn3`),a=document.querySelector(`#btn4`),o=[];async function s(){try{o=(await e.get(`http://localhost:3000/crew`)).data,console.log(o),l(o[0])}catch(e){console.error(`Failed to fetch:`,e.message)}}function c(e){return`
+import{t as e}from"./axios-ByMrdxRv.js";import"./home-DUZErO4J.js";console.log(`hi`);var t=document.querySelector(`#crew-fetch`),n=document.querySelector(`#btn1`),r=document.querySelector(`#btn2`),i=document.querySelector(`#btn3`),a=document.querySelector(`#btn4`),o=[];async function s(){try{o=(await e.get(`http://localhost:3000/crew`)).data,console.log(o),l(o[0])}catch(e){console.error(`Failed to fetch:`,e.message)}}function c(e){return`
               <div class="flex flex-col gap-6 items-center lg:items-start ">
               <h1 class="flex items-center gap-6 tracking-[4px] text-white text-lg md:text-4xl lg:text-3xl font-barlow md:mt-10 md:mb-20 my-5 ">
             <span class="opacity-25 font-bold ">02</span>

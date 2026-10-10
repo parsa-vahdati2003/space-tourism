@@ -1,4 +1,4 @@
-import{t as e}from"./axios-ByMrdxRv.js";import"./home-PJJHuPYa.js";console.log(`hi`);var t=document.querySelector(`#destination-content`),n=[];async function r(){try{n=(await e.get(`http://localhost:3000/destinations`)).data,console.log(n),i(n[0])}catch(e){console.error(`Failed to fetch:`,e.message)}}function i(e){t.innerHTML=a(e)}function a(e){return`
+import{t as e}from"./axios-ByMrdxRv.js";import"./home-DUZErO4J.js";console.log(`hi`);var t=document.querySelector(`#destination-content`),n=[];async function r(){try{n=(await e.get(`http://localhost:3000/destinations`)).data,console.log(n),i(n[0])}catch(e){console.error(`Failed to fetch:`,e.message)}}function i(e){t.innerHTML=a(e)}function a(e){return`
     <div id="destination-image">
       <img class="size-50 md:size-75 lg:size-120"
         src="${e.images.webp.replace(`./`,`/`)}"

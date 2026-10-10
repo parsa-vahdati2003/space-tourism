@@ -1,4 +1,4 @@
-import{t as e}from"./axios-ByMrdxRv.js";import"./home-PJJHuPYa.js";var t=document.querySelector(`#technology-fetch`);console.log(`hi`);var n=[];async function r(){try{n=(await e.get(`http://localhost:3000/technology`)).data,console.log(n),i(n[0])}catch(e){console.error(`Failed to fetch:`,e.message)}}function i(e){t.innerHTML=a(e)}function a(e){return`
+import{t as e}from"./axios-ByMrdxRv.js";import"./home-DUZErO4J.js";var t=document.querySelector(`#technology-fetch`);console.log(`hi`);var n=[];async function r(){try{n=(await e.get(`http://localhost:3000/technology`)).data,console.log(n),i(n[0])}catch(e){console.error(`Failed to fetch:`,e.message)}}function i(e){t.innerHTML=a(e)}function a(e){return`
     <div class="flex gap-16 py-10  lg:py-50 lg:flex-row flex-col-reverse">
 
      
