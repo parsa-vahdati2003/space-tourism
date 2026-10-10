@@ -768,9 +768,6 @@
     .md\:px-10 {
       padding-inline: calc(var(--spacing) * 10);
     }
-    .md\:px-18 {
-      padding-inline: calc(var(--spacing) * 18);
-    }
     .md\:px-20 {
       padding-inline: calc(var(--spacing) * 20);
     }
