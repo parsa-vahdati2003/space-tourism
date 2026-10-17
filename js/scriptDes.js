@@ -9,8 +9,8 @@ console.log("hi");
 // des-con
 const desContent = document.querySelector("#destination-content");
 
-// let all = []; // [Moon, Mars, Europa, Titan]
-const all = data.destinations;
+let all = []; // [Moon, Mars, Europa, Titan]
+// const all = data.destinations;
 
 // ========================================
 // GET API DATA
