@@ -6,8 +6,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start:tw": "npx @tailwindcss/cli -i ./css/main.css -o ./css/style.css --watch",
-    "server": "json-server data/data.json --port 3000"
+    "start:tw": "npx @tailwindcss/cli -i ./src/css/main.css -o ./src/css/style.css --watch",
+    "server": "json-server src/data/data.json --port 3000"
   },
   "dependencies": {
     "axios": "^1.16.0",

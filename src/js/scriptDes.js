@@ -1,5 +1,4 @@
 import axios from "axios";
-import data from "../data/data.json";
 console.log("hi");
 
 // ========================================
@@ -47,7 +46,7 @@ function destinationTemplate(destination) {
   return `
     <div id="destination-image">
       <img class="size-50 md:size-75 lg:size-120"
-        src="${destination.images.webp.replace("./", "/")}"
+        src="${destination.images.webp}"
         alt="${destination.name}"
       >
     </div>

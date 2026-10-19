@@ -214,11 +214,17 @@
   .top-0 {
     top: 0px;
   }
+  .top-5 {
+    top: calc(var(--spacing) * 5);
+  }
   .top-5\.75 {
     top: calc(var(--spacing) * 5.75);
   }
   .right-0 {
     right: 0px;
+  }
+  .right-4 {
+    right: calc(var(--spacing) * 4);
   }
   .right-4\.5 {
     right: calc(var(--spacing) * 4.5);
@@ -264,6 +270,9 @@
   }
   .hidden {
     display: none;
+  }
+  .table {
+    display: table;
   }
   .size-3 {
     width: calc(var(--spacing) * 3);
@@ -317,11 +326,20 @@
   .max-w-135 {
     max-width: calc(var(--spacing) * 135);
   }
+  .flex-shrink {
+    flex-shrink: 1;
+  }
   .shrink-0 {
     flex-shrink: 0;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -377,6 +395,10 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -418,6 +440,9 @@
       background-color: color-mix(in oklab, var(--color-white) 17%, transparent);
     }
   }
+  .bg-\[url\(\'\.\.\/\.\.\/assets\/destination\/background-destination-mobile\.jpg\'\)\] {
+    background-image: url('../../assets/destination/background-destination-mobile.jpg');
+  }
   .bg-\[url\(\'\.\.\/assets\/crew\/background-crew-desktop\.jpg\'\)\] {
     background-image: url('../assets/crew/background-crew-desktop.jpg');
   }
@@ -427,8 +452,14 @@
   .bg-\[url\(\'\.\.\/assets\/technology\/background-technology-desktop\.jpg\'\)\] {
     background-image: url('../assets/technology/background-technology-desktop.jpg');
   }
+  .bg-\[url\(\'\/assets\/crew\/background-crew-mobile\.jpg\'\)\] {
+    background-image: url('/assets/crew/background-crew-mobile.jpg');
+  }
   .bg-\[url\(\'\/assets\/home\/background-home-mobile\.jpg\'\)\] {
     background-image: url('/assets/home/background-home-mobile.jpg');
+  }
+  .bg-\[url\(\'\/assets\/technology\/background-technology-mobile\.jpg\'\)\] {
+    background-image: url('/assets/technology/background-technology-mobile.jpg');
   }
   .bg-cover {
     background-size: cover;
@@ -441,6 +472,9 @@
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
+  }
+  .p-12 {
+    padding: calc(var(--spacing) * 12);
   }
   .p-12\.5 {
     padding: calc(var(--spacing) * 12.5);
@@ -552,11 +586,22 @@
   .uppercase {
     text-transform: uppercase;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .opacity-25 {
     opacity: 25%;
   }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .backdrop-blur-sm {
     --tw-backdrop-blur: blur(var(--blur-sm));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-filter {
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
@@ -663,6 +708,9 @@
     .md\:items-center {
       align-items: center;
     }
+    .md\:justify-center {
+      justify-content: center;
+    }
     .md\:justify-start {
       justify-content: flex-start;
     }
@@ -675,6 +723,9 @@
     .md\:gap-40 {
       gap: calc(var(--spacing) * 40);
     }
+    .md\:bg-\[url\(\'\.\.\/\.\.\/assets\/destination\/background-destination-tablet\.jpg\'\)\] {
+      background-image: url('../../assets/destination/background-destination-tablet.jpg');
+    }
     .md\:bg-\[url\(\'\.\.\/assets\/crew\/background-crew-tablet\.jpg\'\)\] {
       background-image: url('../assets/crew/background-crew-tablet.jpg');
     }
@@ -684,8 +735,14 @@
     .md\:bg-\[url\(\'\.\.\/assets\/technology\/background-technology-tablet\.jpg\'\)\] {
       background-image: url('../assets/technology/background-technology-tablet.jpg');
     }
+    .md\:bg-\[url\(\'\/assets\/crew\/background-crew-tablet\.jpg\'\)\] {
+      background-image: url('/assets/crew/background-crew-tablet.jpg');
+    }
     .md\:bg-\[url\(\'\/assets\/home\/background-home-tablet\.jpg\'\)\] {
       background-image: url('/assets/home/background-home-tablet.jpg');
+    }
+    .md\:bg-\[url\(\'\/assets\/technology\/background-technology-tablet\.jpg\'\)\] {
+      background-image: url('/assets/technology/background-technology-tablet.jpg');
     }
     .md\:p-0 {
       padding: 0px;
@@ -704,6 +761,9 @@
     }
     .md\:px-41 {
       padding-inline: calc(var(--spacing) * 41);
+    }
+    .md\:py-0 {
+      padding-block: 0px;
     }
     .md\:py-8 {
       padding-block: calc(var(--spacing) * 8);
@@ -806,6 +866,12 @@
     .lg\:justify-start {
       justify-content: flex-start;
     }
+    .lg\:gap-20 {
+      gap: calc(var(--spacing) * 20);
+    }
+    .lg\:bg-\[url\(\'\.\.\/\.\.\/assets\/destination\/background-destination-desktop\.jpg\'\)\] {
+      background-image: url('../../assets/destination/background-destination-desktop.jpg');
+    }
     .lg\:bg-\[url\(\'\.\.\/assets\/crew\/background-crew-mobile\.jpg\'\)\] {
       background-image: url('../assets/crew/background-crew-mobile.jpg');
     }
@@ -815,8 +881,14 @@
     .lg\:bg-\[url\(\'\.\.\/assets\/technology\/background-technology-mobile\.jpg\'\)\] {
       background-image: url('../assets/technology/background-technology-mobile.jpg');
     }
+    .lg\:bg-\[url\(\'\/assets\/crew\/background-crew-desktop\.jpg\'\)\] {
+      background-image: url('/assets/crew/background-crew-desktop.jpg');
+    }
     .lg\:bg-\[url\(\'\/assets\/home\/background-home-desktop\.jpg\'\)\] {
       background-image: url('/assets/home/background-home-desktop.jpg');
+    }
+    .lg\:bg-\[url\(\'\/assets\/technology\/background-technology-desktop\.jpg\'\)\] {
+      background-image: url('/assets/technology/background-technology-desktop.jpg');
     }
     .lg\:px-12 {
       padding-inline: calc(var(--spacing) * 12);
@@ -916,6 +988,11 @@
 @property --tw-tracking {
   syntax: "*";
   inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-backdrop-blur {
   syntax: "*";
@@ -1034,6 +1111,7 @@
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
+      --tw-outline-style: solid;
       --tw-backdrop-blur: initial;
       --tw-backdrop-brightness: initial;
       --tw-backdrop-contrast: initial;
