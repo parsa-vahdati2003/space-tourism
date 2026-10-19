@@ -6,7 +6,7 @@ A responsive space tourism website built to explore destinations, crew members, 
 
 ## 🌐 Live Demo
 
-**[Click here to visit the Space Tourism Website](https://space-tourism-xi-virid.vercel.app/)**
+**[Click here to visit the Space Tourism Website](space-tourism-xi-virid.vercel.app)**
 
 
 ## 🛠️ Technologies Used
