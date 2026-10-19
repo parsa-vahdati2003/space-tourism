@@ -17,7 +17,9 @@ let all = []; // [Moon, Mars, Europa, Titan]
 
 async function getDestinations() {
   try {
-    const res = await axios.get("http://localhost:3000/destinations");
+    const res = await axios.get(
+      "https://space-tourism-lv0a.onrender.com/destinations",
+    );
 
     all = res.data;
 
