@@ -14,7 +14,9 @@ let all = [];
 
 async function getTec() {
   try {
-    const res = await axios.get("http://localhost:3000/technology");
+    const res = await axios.get(
+      "https://space-tourism-lv0a.onrender.com/technology",
+    );
 
     all = res.data;
 

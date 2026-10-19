@@ -16,7 +16,7 @@ let all = [];
 
 async function getUrlCerew() {
   try {
-    const res = await axios.get("http://localhost:3000/crew");
+    const res = await axios.get("https://space-tourism-lv0a.onrender.com/crew");
 
     all = res.data;
 
